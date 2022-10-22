@@ -1,0 +1,16 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    font-size: rem(20px);
+    line-height: em(32px, 20px);
+    color: var(--white);
+
+    &:not(:last-child) {
+      margin-right: em(40px, 20px);
+    }
+  }
+}
