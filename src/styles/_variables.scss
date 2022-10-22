@@ -1,0 +1,15 @@
+:root {
+  // colors
+
+  --white: #fff;
+  --black: #141024;
+
+  // values
+
+  --content-width: #{em(1160px)};
+  --container-offset: #{em(15px)};
+
+  // fonts
+
+  --font-family: "Jost", sans-serif;
+}
