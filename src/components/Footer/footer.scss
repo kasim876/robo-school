@@ -1,0 +1,21 @@
+@import "@cmps/Logo/logo";
+@import "@cmps/Phone/phone";
+
+.footer {
+  background-color: var(--black);
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: rem(40px) rem(100px);
+  }
+
+  &__copyright {
+    display: block;
+    margin-top: em(16px, 16px);
+    font-size: rem(16px);
+    line-height: 160%;
+    color: var(--gray);
+  }
+}
