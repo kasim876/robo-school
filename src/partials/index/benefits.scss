@@ -1,0 +1,29 @@
+@import "@cmps/Tooltip/tooltip";
+
+.benefits {
+  padding: var(--section-vertical-offset) 0;
+  background-color: #f9f9f9;
+
+  &__title {
+    margin-bottom: em(60px, 50px);
+  }
+
+  &__list {
+    display: grid;
+    column-gap: var(--column-gap);
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: var(--row-gap);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: em(20px, 24px);
+  }
+}

@@ -1,0 +1,35 @@
+.tooltip {
+  display: block;
+  margin-left: rem(10px);
+
+  &__btn {
+    border-radius: 50%;
+    width: rem(24px);
+    height: rem(24px);
+    font-weight: 600;
+    font-size: rem(16px);
+    text-align: center;
+    background-color: rgba(20 16 36 / 8%);
+
+    @include hover {
+      + .tooltip__text {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__text {
+    display: block;
+    border-radius: var(--r-regular);
+    padding: em(16px, 16px) em(20px, 16px);
+    box-shadow: 0 2px 8px rgba(20 16 36 / 10%);
+    font-weight: 400;
+    font-size: rem(16px);
+    line-height: em(26px, 16px);
+    background-color: var(--white);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+}
