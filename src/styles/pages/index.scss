@@ -1,5 +1,9 @@
 @import "../mixins";
 
+// modules
+
+@import "../../../node_modules/swiper/swiper-bundle";
+
 // components
 
 @import "@cmps/Header/header";
@@ -9,3 +13,4 @@
 @import "@partials/index/hero";
 @import "@partials/index/about";
 @import "@partials/index/benefits";
+@import "@partials/index/coaches";
