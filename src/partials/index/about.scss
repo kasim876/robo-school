@@ -1,0 +1,26 @@
+.about {
+  padding: var(--section-vertical-offset-big) 0;
+
+  &__descr {
+    margin-bottom: em(60px, 30px);
+    max-width: rem(890px);
+    font-size: rem(30px);
+    line-height: em(48px, 30px);
+    color: var(--black);
+  }
+
+  &__list {
+    display: grid;
+    column-gap: var(--column-gap);
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: var(--row-gap);
+  }
+
+  &__digit {
+    margin: 0;
+    font-weight: 600;
+    font-size: rem(70px);
+    line-height: em(112px, 70px);
+    color: var(--red);
+  }
+}

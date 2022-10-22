@@ -1,0 +1,15 @@
+.text {
+  margin: 0;
+  line-height: 160%;
+
+  &_small {
+    font-size: rem(18px);
+    color: var(--gray);
+  }
+
+  &_medium {
+    font-weight: 600;
+    font-size: rem(24px);
+    color: var(--black);
+  }
+}

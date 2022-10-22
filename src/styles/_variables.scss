@@ -4,15 +4,22 @@
   --white: #fff;
   --black: #141024;
   --red: #d52027;
+  --gray: #5b5866;
 
   // values
 
   --content-width: #{em(1160px)};
   --container-offset: #{em(15px)};
+  --section-vertical-offset-big: #{em(120px)};
 
   // radius
 
   --r-regular: 5px;
+
+  // gaps
+
+  --column-gap: #{em(40px)};
+  --row-gap: #{em(30px)};
 
   // fonts
 
