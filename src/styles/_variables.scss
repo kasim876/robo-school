@@ -3,11 +3,16 @@
 
   --white: #fff;
   --black: #141024;
+  --red: #d52027;
 
   // values
 
   --content-width: #{em(1160px)};
   --container-offset: #{em(15px)};
+
+  // radius
+
+  --r-regular: 5px;
 
   // fonts
 

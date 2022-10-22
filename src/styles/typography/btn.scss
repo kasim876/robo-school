@@ -1,0 +1,22 @@
+@use "sass:color";
+
+.btn {
+  border-radius: var(--r-regular);
+  font-size: rem(18px);
+  line-height: em(27px, 18px);
+  text-align: center;
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+
+  &_red {
+    background-color: var(--red);
+
+    @include hover {
+      background-color: color.adjust(#d52027, $lightness: 20%);
+    }
+  }
+
+  &_black {
+    background-color: var(--black);
+  }
+}

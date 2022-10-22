@@ -1,0 +1,48 @@
+.hero {
+  padding-top: rem(80px);
+  color: var(--white);
+  background-color: var(--black);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      display: block;
+      width: rem(640px);
+      height: rem(750px);
+      background-image: url("../images/woman-looking-into-the-distance.png");
+      background-size: (100%, 100%);
+      background-repeat: no-repeat;
+      transform: translateX(rem(80px));
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: rem(520px);
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: em(20px, 70px);
+    font-weight: 600;
+    font-size: rem(70px);
+    line-height: em(112px, 70px);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: em(50px, 20px);
+    font-size: rem(20px);
+    line-height: em(32px, 20px);
+  }
+
+  &__link {
+    padding: em(18px, 18px) 0;
+    width: em(261px, 18px);
+  }
+}
