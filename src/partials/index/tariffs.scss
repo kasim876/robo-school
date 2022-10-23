@@ -10,6 +10,10 @@
     column-gap: var(--column-gap);
     grid-template-columns: repeat(3, 1fr);
     row-gap: var(--row-gap);
+
+    @include laptop {
+      column-gap: 20px;
+    }
   }
 
   &__item {
@@ -25,6 +29,18 @@
       color: var(--white);
       background-color: var(--black);
       transform: scale(1.1);
+
+      @include laptop {
+        transform: none;
+      }
+    }
+
+    @include laptop {
+      padding: rem(40px) rem(20px);
+    }
+
+    @include tablet {
+      grid-column: 3 span;
     }
   }
 
@@ -61,6 +77,14 @@
     font-weight: 600;
     font-size: rem(50px);
     line-height: em(80px, 50px);
+
+    @include resolution(1200px) {
+      font-size: rem(45px);
+    }
+
+    @include resolution(992px) {
+      font-size: rem(32px);
+    }
   }
 
   &__descr {
