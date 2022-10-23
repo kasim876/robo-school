@@ -8,11 +8,22 @@
   &__container {
     display: flex;
     justify-content: space-between;
+
+    @include resolution(992px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: initial;
+    }
   }
 
   &__promo {
     max-width: rem(480px);
     color: var(--white);
+
+    @include resolution(992px) {
+      margin-bottom: rem(30px);
+      text-align: center;
+    }
   }
 
   &__title {
