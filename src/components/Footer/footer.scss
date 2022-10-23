@@ -9,6 +9,23 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: rem(40px) rem(100px);
+
+    @include resolution(1200px) {
+      padding: rem(40px) rem(15px);
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: initial;
+      text-align: center;
+    }
+  }
+
+  &__column {
+    @include tablet {
+      margin-bottom: rem(30px);
+    }
   }
 
   &__copyright {
