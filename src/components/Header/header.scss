@@ -1,6 +1,7 @@
 @import "@cmps/Logo/logo";
 @import "@cmps/Navigation/nav";
 @import "@cmps/Phone/phone";
+@import "@cmps/Burger/burger";
 
 .header {
   background-color: var(--black);
@@ -10,5 +11,34 @@
     align-items: center;
     justify-content: space-between;
     padding: rem(30px) rem(100px);
+
+    .nav {
+      @include resolution(992px) {
+        display: none;
+      }
+    }
+
+    .phone {
+      @include resolution(992px) {
+        margin-left: auto;
+        border: 1px solid var(--white);
+        border-radius: var(--r-medium);
+        width: rem(44px);
+        height: rem(44px);
+        font-size: 0;
+        background-image: url("../images/svg/phone.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include resolution(1200px) {
+      padding: rem(20px) rem(15px);
+    }
+
+    @include resolution(992px) {
+      justify-content: initial;
+      padding: rem(10px) rem(15px);
+    }
   }
 }
