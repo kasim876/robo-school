@@ -26,6 +26,11 @@
       display: block;
       border-radius: inherit;
     }
+
+    @include resolution(1200px) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__name {
@@ -61,6 +66,10 @@
       height: inherit;
       background-color: var(--black);
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__nav {
@@ -84,6 +93,10 @@
       &:not(:last-child) {
         margin-right: rem(10px);
       }
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 }
