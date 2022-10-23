@@ -5,6 +5,10 @@
   &_small {
     font-size: rem(18px);
     color: var(--gray);
+
+    @include mobile {
+      font-size: rem(16px);
+    }
   }
 
   &_medium {

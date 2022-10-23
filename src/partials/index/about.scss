@@ -7,6 +7,14 @@
     font-size: rem(30px);
     line-height: em(48px, 30px);
     color: var(--black);
+
+    @include tablet {
+      font-size: rem(24px);
+    }
+
+    @include mobile {
+      font-size: rem(20px);
+    }
   }
 
   &__list {
@@ -16,11 +24,26 @@
     row-gap: var(--row-gap);
   }
 
+  &__item {
+    @include resolution(1200px) {
+      grid-column: 2 span;
+      text-align: center;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
+  }
+
   &__digit {
     margin: 0;
     font-weight: 600;
     font-size: rem(70px);
     line-height: em(112px, 70px);
     color: var(--red);
+
+    @include mobile {
+      font-size: rem(60px);
+    }
   }
 }

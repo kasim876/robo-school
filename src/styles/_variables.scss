@@ -32,3 +32,17 @@
 
   --font-family: "Jost", sans-serif;
 }
+
+@include tablet {
+  :root {
+    --section-vertical-offset-big: #{em(100px)};
+    --section-vertical-offset: #{em(80px)};
+  }
+}
+
+@include mobile {
+  :root {
+    --section-vertical-offset-big: #{em(60px)};
+    --section-vertical-offset: #{em(40px)};
+  }
+}
