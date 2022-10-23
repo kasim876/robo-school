@@ -4,4 +4,13 @@
   font-size: rem(50px);
   line-height: em(80px, 50px);
   color: var(--black);
+
+  @include resolution(992px) {
+    font-size: rem(40px);
+  }
+
+  @include tablet {
+    font-size: rem(30px);
+    text-align: center;
+  }
 }
