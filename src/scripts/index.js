@@ -1,6 +1,7 @@
 // components
 
 import '@cmps/Header/header';
+import '@cmps/Modal/modal';
 
 // sections
 

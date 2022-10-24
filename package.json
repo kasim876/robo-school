@@ -55,8 +55,12 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
     "focus-visible": "^5.2.0",
+    "simplebar": "^5.3.9",
     "swiper": "^8.4.4",
+    "useful-modal": "^1.0.0",
+    "useful-tabs": "^1.0.0",
     "vanilla-lazyload": "^17.8.3"
   }
 }

@@ -3,11 +3,15 @@
 // modules
 
 @import "../../../node_modules/swiper/swiper-bundle";
+@import "../../../node_modules/simplebar/src/simplebar";
+@import "../../../node_modules/useful-modal/src/useful-modal";
+@import "../../../node_modules/useful-tabs/src/useful-tabs";
 
 // components
 
 @import "@cmps/Header/header";
 @import "@cmps/Footer/footer";
+@import "@cmps/Modal/modal";
 
 // sections
 

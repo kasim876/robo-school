@@ -1,0 +1,88 @@
+.modal 
+  .modal__card.popup(data-modal-target="coach", role="dialog", aria-modal="true")
+    button.btn-reset.text.text_small.modal__close Закрыть
+    .popup__header 
+      .popup__img 
+        +img("coach_Marina.jpg", "Марина Орлова")
+      .popup__info 
+        .text.text_medium.popup__name Марина Орлова
+        .text.text_small.popup__post преподаватель по робототехнике
+        ul.list-reset.socials 
+          li.socials__item 
+            a.socials__link(href="#") 
+              +icon("fb")(class="socials__icon")
+          li.socials__item 
+            a.socials__link(href="#") 
+              +icon("inst")(class="socials__icon")
+    .tabs
+      ul.list-reset.tabs__nav
+        li.tabs__item 
+          button.btn-reset.tabs__btn.tabs__btn_current(type="button") Образование
+        li.tabs__item 
+          button.btn-reset.tabs__btn(type="button") Опыт работы
+        li.tabs__item 
+          button.btn-reset.tabs__btn(type="button") Награды
+      .tabs__content 
+        .tabs__panel.tabs__panel_current(data-simplebar)
+          .popup__content 
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+          .popup__content 
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Ноябрь 2020 — Февраль 2021
+            p.popup__text Программа дополнительного образования "3D Моделирование"
+            p.popup__text Место проведения: институт дополнительного образования "Политех"
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Заочная
+          .popup__content 
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+        .tabs__panel(data-simplebar)
+          .popup__content
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+          .popup__content
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+        .tabs__panel(data-simplebar)
+          .popup__content
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+          .popup__content
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Ноябрь 2020 — Февраль 2021
+            p.popup__text Программа дополнительного образования "3D Моделирование"
+            p.popup__text Место проведения: институт дополнительного образования "Политех"
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Заочная
+          .popup__content
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Сентябрь 1995 — Июнь 2000
+            p.popup__text Санкт-Петербургский политехнический университет Петра Великого
+            p.popup__text Факультет: Компьютерных наук и технологий
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Очная
+          .popup__content
+            h3.popup__subtitle Курсы и тренинги
+            p.popup__text Ноябрь 2020 — Февраль 2021
+            p.popup__text Программа дополнительного образования "3D Моделирование"
+            p.popup__text Место проведения: институт дополнительного образования "Политех"
+            p.popup__text Специальность: Математика и компьютерные науки
+            p.popup__text Форма обучения: Заочная

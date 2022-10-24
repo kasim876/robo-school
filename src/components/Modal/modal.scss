@@ -1,0 +1,131 @@
+.modal__close {
+  position: absolute;
+  right: rem(40px);
+  top: rem(40px);
+}
+
+.popup {
+  position: relative;
+  margin: rem(50px) auto;
+  border-radius: var(--r-large);
+  padding: rem(40px);
+  width: 100%;
+  height: auto;
+  max-width: rem(940px);
+  background-color: var(--white);
+
+  &__header {
+    display: flex;
+    margin-bottom: rem(40px);
+  }
+
+  &__img {
+    margin-right: rem(40px);
+    border-radius: var(--r-large);
+    width: rem(160px);
+    height: rem(222px);
+
+    img {
+      border-radius: inherit;
+    }
+  }
+
+  &__name {
+    margin-bottom: em(10px, 24px);
+  }
+
+  &__post {
+    margin-bottom: em(10px, 18px);
+  }
+
+  &__content:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: em(5px, 20px);
+    font-size: rem(20px);
+    line-height: 160%;
+    color: var(--black);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: em(20px, 24px);
+    font-weight: 600;
+    font-size: rem(24px);
+    line-height: 160%;
+    color: var(--black);
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: rem(10px);
+  }
+
+  &__link {
+    display: block;
+    border-radius: 50%;
+    width: rem(30px);
+    height: rem(30px);
+  }
+
+  &__icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tabs {
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid rgba(20 16 36 / 11%);
+    padding-bottom: rem(20px);
+  }
+
+  &__btn {
+    font-size: rem(20px);
+    line-height: 160%;
+    color: var(--black);
+
+    &_current {
+      outline: none;
+      color: var(--red) !important;
+      background-color: initial !important;
+      pointer-events: none;
+    }
+  }
+
+  &__panel {
+    display: none;
+    overflow: auto;
+    padding-top: rem(20px);
+    padding-right: rem(20px);
+    height: 375px;
+    max-height: 375px;
+
+    &_current {
+      display: block;
+    }
+  }
+}
+
+.simplebar-track.simplebar-vertical {
+  margin: rem(20px) 0;
+  border-radius: 40px;
+  width: 5px;
+  background-color: rgba(20 16 36 / 8%);
+}
+
+.simplebar-scrollbar {
+  border-radius: 40px;
+  width: 5px;
+  background-color: var(--black);
+}
