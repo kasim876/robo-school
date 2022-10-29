@@ -6,7 +6,7 @@
 
   &__item {
     font-size: rem(20px);
-    line-height: em(32px, 20px);
+    line-height: 160%;
     color: var(--white);
 
     &:not(:last-child) {

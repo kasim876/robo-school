@@ -50,7 +50,7 @@
     margin-bottom: em(20px, 70px);
     font-weight: 600;
     font-size: rem(70px);
-    line-height: em(112px, 70px);
+    line-height: 160%;
     text-transform: uppercase;
 
     @include resolution(992px) {
@@ -66,7 +66,7 @@
     margin: 0;
     margin-bottom: em(50px, 20px);
     font-size: rem(20px);
-    line-height: em(32px, 20px);
+    line-height: 160%;
 
     @include resolution(992px) {
       font-size: rem(18px);

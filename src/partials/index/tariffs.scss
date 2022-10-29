@@ -51,7 +51,7 @@
     margin: 0;
     margin-bottom: em(60px, 30px);
     font-size: rem(30px);
-    line-height: em(48px, 30px);
+    line-height: 160%;
     text-transform: uppercase;
 
     &::before,
@@ -76,7 +76,7 @@
     margin-bottom: em(20px, 50px);
     font-weight: 600;
     font-size: rem(50px);
-    line-height: em(80px, 50px);
+    line-height: 160%;
 
     @include resolution(1200px) {
       font-size: rem(45px);
