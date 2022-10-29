@@ -2,6 +2,16 @@
   position: absolute;
   right: rem(40px);
   top: rem(40px);
+
+  @include tablet {
+    right: rem(10px);
+    top: rem(10px);
+    width: rem(20px);
+    height: rem(20px);
+    font-size: 0;
+    background-image: url("../images/svg/cross.svg");
+    background-size: 100% 100%;
+  }
 }
 
 .popup {
@@ -28,6 +38,12 @@
     img {
       border-radius: inherit;
     }
+
+    @include mobile {
+      margin-right: rem(20px);
+      width: rem(115px);
+      height: rem(160px);
+    }
   }
 
   &__name {
@@ -40,6 +56,10 @@
 
   &__content:not(:last-child) {
     margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: rem(20px);
+    }
   }
 
   &__text {
@@ -48,6 +68,14 @@
     font-size: rem(20px);
     line-height: 160%;
     color: var(--black);
+
+    @include tablet {
+      font-size: rem(18px);
+    }
+
+    @include mobile {
+      font-size: rem(16px);
+    }
   }
 
   &__subtitle {
@@ -57,6 +85,18 @@
     font-size: rem(24px);
     line-height: 160%;
     color: var(--black);
+
+    @include tablet {
+      font-size: rem(22px);
+    }
+
+    @include mobile {
+      font-size: rem(20px);
+    }
+  }
+
+  @include tablet {
+    padding: rem(40px) rem(20px);
   }
 }
 
@@ -96,10 +136,23 @@
     color: var(--black);
 
     &_current {
-      outline: none;
       color: var(--red) !important;
       background-color: initial !important;
       pointer-events: none;
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--red) !important;
+      background-color: initial !important;
+    }
+
+    @include tablet {
+      font-size: rem(18px);
+    }
+
+    @include mobile {
+      font-size: rem(16px);
     }
   }
 
